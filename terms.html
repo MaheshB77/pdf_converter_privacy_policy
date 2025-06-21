@@ -13,7 +13,12 @@
             <div class="nav-brand">
                 <h2>PDF Converter</h2>
             </div>
-            <div class="nav-links">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
                 <a href="index.html" class="nav-link">Privacy Policy</a>
                 <a href="terms.html" class="nav-link active">Terms & Conditions</a>
                 <a href="contact.html" class="nav-link">Contact Us</a>
@@ -143,5 +148,35 @@
             <p>&copy; 2025 PDF Converter. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const navLinks = document.getElementById('navLinks');
+
+            mobileMenuToggle.addEventListener('click', function() {
+                mobileMenuToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close menu when clicking on a link
+            const navLinkElements = document.querySelectorAll('.nav-link');
+            navLinkElements.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.nav-container')) {
+                    mobileMenuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
