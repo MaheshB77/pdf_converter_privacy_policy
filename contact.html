@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Converter - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>PDF Converter</h2>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Privacy Policy</a>
+                <a href="terms.html" class="nav-link">Terms & Conditions</a>
+                <a href="contact.html" class="nav-link active">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="content-header">
+                <h1>Contact Us</h1>
+                <p class="subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            </div>
+
+            <div class="content-body">
+                <div class="contact-container">
+                    <div class="contact-info-section">
+                        <h2>Get in Touch</h2>
+                        <p>Have questions about PDF Converter? Need technical support? Want to provide feedback? We're here to help!</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <h3>Email Support</h3>
+                                <p>mbansode7696@gmail.com</p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h3>Response Time</h3>
+                                <p>We typically respond within 24-48 hours during business days.</p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h3>What to Include</h3>
+                                <ul>
+                                    <li>Your device model and iOS version</li>
+                                    <li>App version (found in App Settings)</li>
+                                    <li>Detailed description of the issue</li>
+                                    <li>Steps to reproduce (if applicable)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="fullName" class="form-label">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" class="form-input" required>
+                                <span class="error-message" id="fullNameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select id="subject" name="subject" class="form-select">
+                                    <option value="">Select a subject</option>
+                                    <option value="technical-support">Technical Support</option>
+                                    <option value="feature-request">Feature Request</option>
+                                    <option value="bug-report">Bug Report</option>
+                                    <option value="feedback">General Feedback</option>
+                                    <option value="privacy">Privacy Question</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="Please describe your question or issue in detail..." required></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="submit-button">
+                                    <span class="button-text">Send Message</span>
+                                    <span class="button-loading" style="display: none;">Sending...</span>
+                                </button>
+                            </div>
+                        </form>
+
+                        <div id="successMessage" class="success-message" style="display: none;">
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for contacting us. We'll get back to you as soon as possible.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Is my data safe?</h3>
+                        <p>Yes! All image processing and PDF conversion happens locally on your device. We never upload or store your files on our servers.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Why doesn't the app work offline?</h3>
+                        <p>The core conversion functionality works completely offline. You only need an internet connection for initial app download and updates.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>What image formats are supported?</h3>
+                        <p>We support all common image formats including JPEG, PNG, HEIC, TIFF, and more.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>How do I delete converted PDFs?</h3>
+                        <p>You can delete PDFs directly within the app or through your device's Files app. All files are stored locally on your device.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 PDF Converter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
