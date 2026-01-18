@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
             `This message was composed using the PDF Converter contact form.`
         );
         
-        const mailtoLink = `mailto:mbansode7696@gmail.com?subject=${subject}&body=${body}`;
+        const mailtoLink = `mailto:mbansode@icloud.com?subject=${subject}&body=${body}`;
         
         // Add a button to open email client
         const emailButton = document.createElement('button');

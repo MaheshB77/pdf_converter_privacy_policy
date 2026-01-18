@@ -30,7 +30,7 @@ A modern, minimal website containing privacy policy, terms and conditions, and c
 - Required fields: Full Name, Email, Message
 - Optional subject selection
 - FAQ section
-- Direct email: mbansode7696@gmail.com
+- Direct email: mbansode@icloud.com
 
 ## Design
 
@@ -99,7 +99,7 @@ Edit the CSS custom properties in `styles.css`:
 - Update company information in all HTML files
 - Modify privacy policy details as needed
 - Adjust terms and conditions for your specific app
-- Update contact email from `mbansode7696@gmail.com`
+- Update contact email from `mbansode@icloud.com`
 
 ### Branding
 - Replace "PDF Converter" with your app name
@@ -121,4 +121,4 @@ These documents are templates and should be reviewed by legal counsel before use
 
 ## Support
 
-For questions about this website template, contact: mbansode7696@gmail.com
+For questions about this website template, contact: mbansode@icloud.com
